@@ -9,7 +9,7 @@ public class Prueba1 {
         int n1;
         int n2;
         int resultado = 0;
-        //
+       
         Scanner consola = new Scanner(System.in);
         System.out.print("Digite un numero: ");
         n1 = Integer.parseInt(consola.nextLine());
