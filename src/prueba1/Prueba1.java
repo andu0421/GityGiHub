@@ -9,30 +9,37 @@ public class Prueba1 {
         int n1;
         int n2;
         int resultado = 0;
-
+       
         Scanner consola = new Scanner(System.in);
-        System.out.println("Digite un numero: ");
+        System.out.print("Digite un numero: ");
         n1 = Integer.parseInt(consola.nextLine());
-        System.out.println("Digite otro numero: ");
+        System.out.print("Digite otro numero: ");
         n2 = Integer.parseInt(consola.nextLine());
-        System.out.println("Que Operacion deseas Realizar: ");
+        System.out.print("Que Operacion deseas Realizar: ");
         String respuesta = consola.nextLine();
-        
-        if("+".equals(respuesta)){
-            resultado = (n1 + n2);
-            
-        }
-        else if("-".equals(respuesta)){
-            resultado = (n1 - n2);
-        }
-           else if("*".equals(respuesta)){
-            resultado = (n1 * n2);
-        }
-           else if("/".equals(respuesta)){
-            resultado = (n1 / n2);
-        }
-        System.out.println("respuesta = " + String.valueOf(resultado));
 
-    } 
+        switch (respuesta) {
+            case "+":
+                resultado = (n1 + n2);
+                System.out.println("respuesta = " + resultado);
+                break;
+            case "-":
+                resultado = (n1 - n2);
+                System.out.println("respuesta = " + resultado);
+                break;
+            case "*":
+                resultado = (n1 * n2);
+                System.out.println("respuesta = " + resultado);
+                break;
+            case "/":
+                resultado = (n1 / n2);
+                System.out.println("respuesta = " + resultado);
+                break;
+                
+            
+
+        }
+
+    }
 
 }
